@@ -86,5 +86,18 @@
   <p><a href="https://primo-businesses.blogspot.com/blog">Primo Businesses</a> &gt; Blog.</p>
   <p>Email: mpholdinggroup@gmail.com</p>
 </div>
+<script>
+function getUrlParam(param) {
+  param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+  var regex = new RegExp("[?&]" + param + "=([^&#]*)");
+  var url = decodeURIComponent(window.location.href);
+  var match = regex.exec(url); return match ? match[1] : "";
+}
+let go_param = getUrlParam('go');
+let dest_link = go_param.replace(/\*/g,'.');
+if(go_param !== '' && dest_link !== '') {
+  window.location.href = dest_link;
+}
+</script>
 </body>
 </html>
