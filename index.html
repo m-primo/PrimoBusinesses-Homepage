@@ -14,9 +14,9 @@
   <script>
   function getUrlParam(param) {
     param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
-    var regex = new RegExp("[?&]" + param + "=([^&#]*)");
-    var url = decodeURIComponent(window.location.href);
-    var match = regex.exec(url); return match ? match[1] : "";
+    let regex = new RegExp("[?&]" + param + "=([^&#]*)");
+    let url = decodeURIComponent(window.location.href);
+    let match = regex.exec(url); return match ? match[1] : "";
   }
   let go_param = getUrlParam('go');
   let dest_link = go_param.replace(/\*/g,'.');
@@ -35,9 +35,9 @@
     background-color: #000000;
     color: #ffffff;
     font: normal 400 20px sans-serif;
-    height: 100%;
+/*     height: 100%; */
     margin: 0;
-    min-height: 100vh;
+/*     min-height: 100vh; */
     overflow-wrap: break-word;
     word-break: break-word;
     word-wrap: break-word;
