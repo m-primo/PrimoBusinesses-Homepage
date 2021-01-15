@@ -71,11 +71,12 @@
         <!-- /.container -->
     </nav>
 
-    <div class="jumbotron feature">
+    <div id="fullHead" class="jumbotron feature" style="height: 101vh;overflow: auto;">
         <div class="container">
             <img src="https://raw.githubusercontent.com/m-primo/pbhp/main/logo.png" style="display: block;text-align: center;margin: 0 auto;" width="256" />
             <h1 class="name">MP</h1>
             <p>Welcome to <span class="name">MP</span> Homepage.</p>
+            <p style="margin-top: 30px;"><button id="navtobtm" class="btn btn-lg btn-primary">Navigate</button></p>
         </div>
     </div>
 
@@ -132,6 +133,19 @@
     addSection('Contact Us');
     addLink('6', 'mailto:mpholdinggroup@gmail.com', 'Email', 'mpholdinggroup@gmail.com');
     addLink('6', 'https://mp-primo.blogspot.com/p/contact.html?about=Primo_Businesses_Homepage', 'Contact Form', '');
+    // ----------------------------------------------------
+    $(document).ready(function (){
+        $('#fullHead').css('height', $(window).height());
+        $(window).on('resize', function(){
+            var win = $(this);
+            $('#fullHead').css('height', win.height());
+        });
+        $("#navtobtm").click(function(){
+            $('html, body').animate({
+                scrollTop: $("#main_content").offset().top-75
+            }, 2000);
+        });
+    });
     </script>
 
     <!-- (C) template downloaded from https://www.quackit.com/html/templates/download/bootstrap/corporate-1a -->
