@@ -9,10 +9,29 @@ body {
 a {
     text-decoration: none;
 }
+img {
+    max-width: 100%;
+}
+.navbar-brand {
+    margin-top: -5px;
+}
+.navbar-brand .brand-logo {
+    display: inline-block;
+    width: 32px;
+}
+.navbar-brand .brand-name {
+    margin-left: 5px;
+}
 #fullHead {
-    height: 101vh;
-    min-height: 600px;
+    min-height: 101vh;
+    height: 600px;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 #fullHead h1 {
     color: #fff;
@@ -20,6 +39,13 @@ a {
 #fullHead.feature {
     background-color: #222;
     color: #959595;
+    margin-top: -5px;
+}
+#fullHead > .container {
+    margin-top: -5%;
+}
+#fullHead .brand-logo {
+    width: 256px;
 }
 #main_content {
     padding: 1rem;
