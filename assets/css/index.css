@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
 }
 body {
     padding-top: 50px;
@@ -115,6 +115,7 @@ article .featured.featured-badge {
 }
 article .featured.featured-badge i {
     font-size: 52px;
+    font-style: normal;
 }
 article .featured.featured-text {
     font-size: 30px;

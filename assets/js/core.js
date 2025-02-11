@@ -18,7 +18,7 @@ function addLink(section_idx, link, title, desc='', is_featured=false) {
     let phtml = '<article class="col-lg-4 col-md-6 col-sm-12 article-intro">';
     if(is_featured !== false) {
         if(is_featured === true) {
-            phtml += '<span class="featured featured-badge text-primary"><i class="far fa-star"></i></span>';
+            phtml += '<span class="featured featured-badge text-primary"><i>&#11088;</i></span>';
         } else if(typeof is_featured === 'object') {
             phtml += '<span class="featured featured-text '+is_featured[1]+'">'+is_featured[0]+'</span>';
         }
